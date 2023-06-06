@@ -1,3 +1,6 @@
+<H1>THE HORROR MANSION</H1>
+<BR>
+
 Hello,Welcome to horror mansion a CLI terminal based text adventure game, This a small node js practice  project for me to lean more about nodejs ..hope you enjoy this game , Thank you
 
 important notice 
