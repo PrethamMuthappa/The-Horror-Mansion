@@ -189,8 +189,10 @@ async function candle_encounted(){
             'Stay in the darkness',
         ],
         
+        
     })
-
+    await sleep();
+    
     if(candleenchoice.candle=='Light the candle again'){
 
         const spinner=createSpinner();
@@ -251,7 +253,7 @@ async function candle_encounted(){
             } 
         }
 
-        if(candlerelight.relight=='take the key'){
+        if(candlerelight.relight=='investigate the surrounding further'){
             console.log(chalk.redBright(`You carefully examine the surroundings, searching for any additional clues`))
             
         }
@@ -365,7 +367,7 @@ async function clue_searching(){
 
         const spinner= createSpinner();
         spinner.success();
-    }
+    } 
 }
 
 
