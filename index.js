@@ -13,9 +13,27 @@ let sleep=(ms=1000)=>new Promise((r)=>setTimeout(r,ms));
 
 async function welcome(){
 
-    let gametitle=chalkAnimation.rainbow('WELCOME TO : THE HORROR MANSION');
+    figlet.text(
+        "THE HORROR MANSION",
+        {
+          font: "Bloody",
+          horizontalLayout: "fitted",
+          verticalLayout: "controlled smushing",
+          
+          
+        },
+        function (err, data) {
+          if (err) {
+            console.log("Something went wrong...");
+            console.dir(err);
+            return;
+          }
+          console.log(gradient.pastel.multiline(data));
+        }
+      );
+      
     await sleep();
-    gametitle.stop();
+    
 
     console.log(`
     ${chalk.green('HOW TO PLAY')}
@@ -192,7 +210,7 @@ async function candle_encounted(){
         
     })
     await sleep();
-    
+
     if(candleenchoice.candle=='Light the candle again'){
 
         const spinner=createSpinner();
